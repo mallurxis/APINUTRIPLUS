@@ -56,11 +56,7 @@ foreign key(codProf) references tbProfessores(codProf),
 foreign key(codPrato) references tbPratos(codPrato));
 
 
-INSERT INTO 'tbAlunos' ('codAluno','rmAluno', 'nomeAluno', 'email', 'senha', 'modulo')
-VALUES (1 ,23548, 'Maria Luísa Reis', 'marialuisarocha@gmail.com','123456', 3);
+INSERT INTO `tbAlunos` (`codAluno`,`rmAluno`, `nomeAluno`, `email`, `senha`, `modulo`)
+VALUES (1, 23548, 'Maria Luísa Reis', 'marialuisarocha@gmail.com', 123456, 3);
 
- ALTER TABLE 'tbAlunos'
- ADD PRIMARY KEY ('codAluno');
 
- ALTER TABLE 'tbAlunos'
- MODIFY 'codAluno' int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT = 6;
